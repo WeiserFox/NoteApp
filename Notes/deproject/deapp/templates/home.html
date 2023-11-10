@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Добро пожаловать, {{ first_name }}</h1>
+<br>
+<a href="http://127.0.0.1:8000/register/">Зарегестрироваться</a>
+<br>
+<a href="http://127.0.0.1:8000/login/">Войти</a>
+<br>
+<a href="http://127.0.0.1:8000/addnote/">Создать заметку</a>
+<br>
+<a href="http://127.0.0.1:8000/notes/">Заметки</a>
+<br>
+<a href="http://127.0.0.1:8000/logout/">Выйти</a>
+<br>
+<a href="https://youtu.be/H6zMQDAk3lg?si=Ilh5eBhQyfLlSDMJ">Реакция ЩУКИ на РОТАНА!!!</a>
+<br>
+{% load static %}
+<img src="{% static 'images/karas.png' %}">
+{% endblock %}
